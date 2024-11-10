@@ -1,3 +1,5 @@
+from album_releases_scraper import *
+
 class AlbumReleasesClient():
     def __init__(self):
         self.page_scraper = AlbumReleasesScraper()
