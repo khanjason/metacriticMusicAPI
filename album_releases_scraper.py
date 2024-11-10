@@ -10,7 +10,7 @@ class AlbumReleasesScraper():
         self._album_tables = []
 
     def run_page_scrape(self):
-        page = self._request_and_get_parsed_page(self.url)
+        page = self._request_and_get_parsed_page(self._page_url)
         self._album_tables = self._extract_release_tables(page)
 
     def get_confirmed_album_releases(self):

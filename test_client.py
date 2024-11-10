@@ -15,3 +15,10 @@ def test_fetch_anticipated_albums():
 def test_fetch_confirmed_albums():
     result = pytest.client.fetch_confirmed_album_releases()
     assert len(result) != 0 
+
+def run_all_tests():
+    test_initialise()
+    test_fetch_anticipated_albums()
+    test_fetch_confirmed_albums()
+
+run_all_tests()
